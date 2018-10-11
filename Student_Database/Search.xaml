@@ -1,0 +1,66 @@
+﻿<Window x:Class="Student_Database.Search"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Database"
+        mc:Ignorable="d"
+        Title="Search" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="203*"/>
+            <ColumnDefinition Width="208*"/>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="159*"/>
+            <ColumnDefinition Width="159*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="firstName" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Center" Width="120" Margin="20.143,31,67.857,30.571" Grid.Column="1"/>
+        <TextBox x:Name="lastName" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Center" Width="120" Grid.Column="1" Margin="165.143,31,136.429,30.571" Grid.ColumnSpan="4"/>
+        <TextBox x:Name="ID" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="U ID" VerticalAlignment="Center" Width="120" Margin="39,43.429,43.857,18.143" Grid.Row="1"/>
+
+        <ComboBox x:Name="Department" Grid.Column="4" Grid.Row ="1" Margin="88,36.429,62.286,18.143" Grid.ColumnSpan="2" >
+            <ComboBoxItem Content="Computer Engineering"/>
+            <ComboBoxItem Content="Computer Science"/>
+            <ComboBoxItem Content="Electrical Engineering"/>
+        </ComboBox>
+
+        <ComboBox x:Name="GPA" Grid.Column="0" Grid.Row ="2" Margin="10,43.857,23.857,10.143" >
+            <ComboBoxItem Content="0 - 3.4"/>
+            <ComboBoxItem Content="3.5 - 3.7"/>
+            <ComboBoxItem Content="3.8 - 3.9"/>
+            <ComboBoxItem Content="4.0 +"/>
+        </ComboBox>
+
+        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="73,26.857,10.286,57.714" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Column="4">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Students with Learning Disabilities" VerticalAlignment="Center" Width="193"/>
+                <RadioButton x:Name="LearningDisabilities" VerticalAlignment="Center" GroupName="Gender" />
+            </StackPanel>
+        </StackPanel>
+
+        <Button Click="Search_button" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" Margin="10,49.857,0,14.714" Grid.Row="3" Height="20"/>
+
+        <Label Content="Search by First and Last Name:" VerticalAlignment="Top" Margin="0,25,192.857,0" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label Content="Search by UID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,0.429,0,0" Grid.Row="1" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Search by Department" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,0.429,0,0" Grid.Row="1" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="4"/>
+        <Label Content="Search by GPA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,84.429,0,0" Grid.Row="1" FontSize="14" FontWeight="Bold" Grid.RowSpan="2"/>
+        
+        <TextBox x:Name="race" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Race" VerticalAlignment="Center" Width="120" Margin="122.143,43.429,31,18.143" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="gender" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Center" Width="120" Margin="122.143,50.857,31,10.143" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1"/>
+        
+        <Label Content="Search by Race" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122.143,0.429,0,0" Grid.Row="1" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label Content="Search by Gender" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122.143,6.857,0,0" Grid.Row="2" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1"/>
+
+
+
+    </Grid>
+</Window>

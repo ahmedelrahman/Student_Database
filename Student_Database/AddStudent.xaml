@@ -1,0 +1,58 @@
+﻿<Window x:Class="Student_Database.AddStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Database"
+        mc:Ignorable="d"
+        Title="AddStudent" Height="450" Width="800">
+    <Grid Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="227*"/>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="117*"/>
+            <ColumnDefinition Width="159*"/>
+            <ColumnDefinition Width="159*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="First Name: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Height="35" Margin="0,34,0,0.714" Width="130" Grid.RowSpan="2"/>
+        <Label Content="Last Name: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Height="34" Margin="0,1.286,0,0.143" Width="128"/>
+        <Label Content="School ID: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3" Height="35" Margin="0,0.857,0,34.714" Grid.RowSpan="2" Width="118"/>
+        <Label Content="Home Address: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="4" Height="35" Margin="0,0.429,0,35.143" Width="170" Grid.RowSpan="2"/>
+        <Label Content="Email: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="5" Height="35" Margin="0,0.286,0,0.143" Width="75"/>
+        <Label Content="Phone Number: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="6" Height="35" Margin="0,0.857,0,34.429" Grid.RowSpan="2" Width="176" />
+        <Label Content="Birth Date: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="7" Height="35" Margin="0,1.714,0,33.571" Grid.RowSpan="2" Width="122" />
+        <Label Content="Gender: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="8" Height="35" Margin="0,0.571,0,35" Grid.RowSpan="2" Width="128" />
+        <Label Content="Race: " FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="9" Height="35" Margin="0,0.429,0,0" Width="96" />
+        <Label Content="Learning Disabilities:" FontSize="18" HorizontalAlignment="Left" Grid.Row="9" Height="34" Margin="0,35.286,0,1" Width="193" VerticalAlignment="Center" Grid.RowSpan="2" />
+
+        <TextBox x:Name="FirstName" Grid.Column="1" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="0.143,34,0,0" Grid.RowSpan="2"/>
+        <TextBox x:Name="LastName" Grid.Column="1" Grid.Row ="2" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,10.286,5.857,2.143"/>
+        <TextBox x:Name="SchoolID" Grid.Column="1" Grid.Row ="3" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,9.857,5.857,2.571"/>
+        <TextBox x:Name="HomeAddress" Grid.Column="1" Grid.Row ="4" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,9.857,5.857,2.571"/>
+        <TextBox x:Name="email" Grid.Column="1" Grid.Row ="5" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,9.857,5.857,2.571"/>
+        <TextBox x:Name="PhoneNumber" Grid.Column="1" Grid.Row ="6" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,9.857,5.857,2.571"/>
+        <TextBox x:Name="BirthDate" Grid.Column="1" Grid.Row ="7" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,9.857,5.857,2.571"/>
+        <TextBox x:Name="gender" Grid.Column="1" Grid.Row ="8" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,9.857,5.857,2.571"/>
+        <TextBox x:Name="race" Grid.Column="1" Grid.Row ="9" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,9.857,5.857,2.571"/>
+        <TextBox x:Name="LearningDisabilities" Grid.Column="1" Grid.Row ="10" HorizontalAlignment="center" Height=" 23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Margin="6.143,9.857,5.857,2.571"/>
+
+        <Button Click="Education" Content="Add Education Details" Background="Aquamarine" FontSize="15" HorizontalAlignment="center" VerticalAlignment="Bottom" Width="150" Grid.Row="5" Grid.Column="3" Height="68" Margin="4,0,4.857,2.571" Grid.RowSpan="2"/>
+
+
+    </Grid>
+</Window>
